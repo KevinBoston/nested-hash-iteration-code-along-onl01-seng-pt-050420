@@ -19,11 +19,7 @@ def remove_strawberry(contacts)
     
     data.each do |k, v|
       if k == :favorite_ice_cream_flavors
-        i = 0
-        if v[i] == "strawberry"
-          contacts[data][k][v][i].pop
-        end
-        i+=1
+       data.delete_if {|ice_cream| ice_cream == "strawberry"}
       end
     end
   end
