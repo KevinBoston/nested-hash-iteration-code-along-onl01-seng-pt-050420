@@ -21,8 +21,9 @@ def remove_strawberry(contacts)
       if k == :favorite_ice_cream_flavors
         i = 0
         if v[i] == "strawberry"
-          contacts[:d][:k][:v][i].pop
+          contacts[:d][:k][i].pop
         end
+        i+=1
       end
     end
   end
